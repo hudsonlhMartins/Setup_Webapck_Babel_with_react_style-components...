@@ -1,7 +1,13 @@
 import React from "react"
+import styled from "styled-components"
+
+
+const MyTitle = styled.h1`
+    color: red;
+`
 
 export const Title = ({name})=>{
 
-    return <h2>Ola {name}</h2>
+    return <MyTitle>Ola {name}</MyTitle>
     
 }
