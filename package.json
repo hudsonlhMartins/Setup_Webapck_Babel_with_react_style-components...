@@ -1,0 +1,33 @@
+{
+  "name": "setup-babel-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build:dev": "webpack -c ./webpack.config.js",
+    "watch": "webpack -c ./webpack.config.js -w",
+    "serve": "webpack serve -c ./webpack.config.js",
+    "start:dev": "npm-run-all clean build:dev --parallel serve watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^9.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "html-webpack-plugin": "^5.5.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
